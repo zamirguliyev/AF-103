@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Watchlist</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-body-secondary">
+        <div class="container-fluid d-flex align-items-center justify-content-between mx-5">
+            <a class="navbar-brand d-flex align-items-center justify-content-start" href="index.html">
+                <h3 class="text-primary">Zamir Shop</h3>
+            </a>
+            <ul class="d-flex gap-3 mt-3">
+                <li><a href="index.html" class="text-black text-decoration-none h4">Home</a></li>
+                <li><a href="meals.html" class="text-black text-decoration-none h4">Meals</a></li>
+                <li><a href="basket.html" class="text-black text-decoration-none h4">Basket (<span
+                            class="h6 text-danger basketCount">0</span>)</a></li>
+                <li><a href="watchlist.html" class="text-black text-decoration-none h4">Watchlist (<span
+                            class="h6 text-danger watchlistCount">0</span>)</a></li>
+                <div id="userButtons" class="d-flex gap-3 userBtn">
+                    <li><a href="login.html" id="loginButton"
+                            class="text-black text-decoration-none h4 btn btn-light">Login</a></li>
+                    <li><a href="register.html" id="registerButton"
+                            class="text-black text-decoration-none h4 btn btn-light">Register</a></li>
+                </div>
+                <div id="userInfo" class="d-none gap-3">
+                    <li><a href="user.html"><span id="usernameDisplay"
+                                class="btn btn-outline-primary text-capitalize"></span></a></li>
+                    <li><button class="btn btn-outline-danger" id="logoutButton">Logout</button></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="container mt-5">
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Nationality</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <!-- SPINNER -->
+    <div class="spinner-wrapper d-none justify-content-center align-items-center">
+        <div class="spinner-border mt-3 " role="status"></div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
+        integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./assets/js/watchlist.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Register Form</h1>
+  <form action="" id="form">
+
+    <fieldset>
+      <legend>Personal Information</legend>
+      <div>
+        <label for="name">Fist Name:</label>
+        <input type="text" id="name" name="Fullname" minlength="3" />
+      </div>
+      <div>
+        <label for="name">Last Name:</label>
+        <input type="text" id="name" name="Lastname" minlength="3" />
+      </div>
+      <div>
+        <label for="name">Age:</label>
+        <input required type="number" name="age" id="name" min="0" max="100" />
+      </div>
+      <div>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact Information</legend>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input required type="password" id="password" />
+      </div>
+      <div>
+        <label for="cars">Country:</label>
+        <select name="cars" id="cars">
+          <optgroup label="Europs">
+            <option value="france">France</option>
+            <option value="germany">Germany</option>
+            <option value="italy">Italy</option>
+          </optgroup>
+          <optgroup label="Asia">
+            <option value="azerbaijan">Azerbaijan</option>
+            <option value="india">India</option>
+            <option value="chain">Chain</option>
+          </optgroup>
+          <optgroup label="Other">
+            <option value="usa">USA</option>
+            <option value="mexica">Mexica</option>
+            <option value="peru">Peru</option>
+          </optgroup>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Address Information</legend>
+      <div>
+        <label for="adress">Adreess:</label>
+        <input type="text" name="address" id="adress">
+      </div>
+      <div>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city">
+      </div>
+      <div>
+        <label for="postalcode">Postal Code:</label>
+        <input type="number" name="postalcode" id="postalcode">
+      </div>
+      <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone">
+      </div>
+    </fieldset>
+    <div>
+      <label for="textare">Additional Comments:</label><br>
+      <textarea name="textare" id="textare" cols="40" rows="5"></textarea>
+    </div>
+    <div>
+      <input type="checkbox" name="check" id="check">
+      <label for="check">Subcribe to our newslatter</label>
+    </div>
+    <button id="form" type="submit">Register</button>
+  </form>
+</body>
+
+</html>

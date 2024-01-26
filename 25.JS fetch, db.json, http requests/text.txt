@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Beyaz Diş",
+    "pageCount": 352,
+    "coverImage": "https://i.dr.com.tr/cache/500x400-0/originals/0001788066001-1.jpg",
+    "author": "Jack London",
+    "year": 1906,
+    "description": "Vahşi doğanın içinde bir kurtun hikayesi.",
+    "genre": "Drama"
+  },
+  {
+    "id": 2,
+    "name": "Küçük Prens",
+    "pageCount": 96,
+    "coverImage": "https://static.insales-cdn.com/images/products/1/4950/443896662/unnamed.jpg",
+    "author": "Antoine de Saint-Exupéry",
+    "year": 1943,
+    "description": "Bir prensin dünyalar arası maceraları.",
+    "genre": "Science Fiction"
+  },
+  {
+    "id": 3,
+    "name": "1984",
+    "pageCount": 328,
+    "coverImage": "https://static.insales-cdn.com/images/products/1/6688/532666912/2022-03-26-09-32-261648272746.jpg",
+    "author": "George Orwell",
+    "year": 1949,
+    "description": "Totaliter bir distopyanın anlatıldığı bir roman.",
+    "genre": "Thriller"
+  },
+  {
+    "id": 4,
+    "name": "Suç ve Ceza",
+    "pageCount": 671,
+    "coverImage": "https://img.kitapyurdu.com/v1/getImage/fn:11318194/wh:true/wi:800",
+    "author": "Fyodor Dostoevsky",
+    "year": 1866,
+    "description": "Bir suçlu gencin içsel çatışmalarını ele alan bir roman.",
+    "genre": "Fantastik"
+  },
+  {
+    "id": 5,
+    "name": "Harry Potter ve Felsefe Taşı",
+    "pageCount": 332,
+    "coverImage": "https://novella.az/wp-content/uploads/2021/02/Harry-Potter-ve-Felsefe-Tasi-Harry-Potter-1.jpg",
+    "author": "J.K. Rowling",
+    "year": 1997,
+    "description": "Bir genç büyücünün maceralarına başladığı kitap.",
+    "genre": "Detective"
+  },
+  {
+    "id": 6,
+    "name": "Simyacı",
+    "pageCount": 163,
+    "coverImage": "https://static.insales-cdn.com/images/products/1/2151/194021479/0000000064552-1.jpg",
+    "author": "Paulo Coelho",
+    "year": 1988,
+    "description": "Bir çobanın kişisel yolculuğunun hikayesi.",
+    "genre": "Drama"
+  }
+]

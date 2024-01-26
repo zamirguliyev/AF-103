@@ -1,0 +1,122 @@
+#header {
+    height: 73px;
+    z-index: 222;
+    @extend %centerElemets;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+
+
+
+ 
+    .header__container {
+        @extend %centerElemets;
+        justify-content: space-between;
+
+        h1 {
+            a {
+                text-transform: uppercase;
+                color: $main-color;
+                font-size: $logo-font;
+                font-family: $poppins;
+                font-weight: 600;
+            }
+        }
+
+        .nav__links {
+
+            ul {
+                li {
+
+                    a {
+                        color: $text-color;
+                        padding: 10px 10px 10px 10px;
+                        font-size: $links-font;
+                        font-family: $poppins;
+                        font-weight: 500;
+                        transition: .3s;
+
+                        &:hover {
+                            color: $main-color;
+                        }
+                    }
+                }
+                
+            }
+
+            .dropdown-1 {
+                position: relative;
+                transition: .6s;
+
+
+                &:hover .dropdown-2 {
+                    display: block;
+                    visibility: visible;
+                    transition: .6s;
+                }
+
+                .dropdown-2 {
+                    z-index: 666;
+                    width: 200px;
+                    position: absolute;
+                    margin-left: -8%;
+                    background-color: white;
+                    padding: 5px;
+                    display: none;
+                    visibility: hidden;
+
+                    .dropdown-3 {
+                        width: 200px;
+                        position: absolute;
+                        margin-left: 100%;
+                        top: 0;
+                        background-color: white;
+                        padding: 5px;
+                        display: none;
+                        visibility: hidden;
+                    }
+                }
+
+                .dropdown-2 {
+                    .dropdown {
+                        &:hover {
+                            .dropdown-3 {
+                                display: block;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        &__right {
+            @extend %centerElemets;
+            margin-bottom: 17px;
+            i {
+                font-size: 28px;
+                display: none;
+                visibility: hidden;
+            }
+        }
+
+        @media only screen and (max-width:992px) {
+
+            nav {
+                display: none;
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            .mobile-nav-toggle {
+                display: block;
+                visibility: visible;
+            }
+        }
+    }
+
+
+}

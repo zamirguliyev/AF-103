@@ -1,0 +1,154 @@
+#footer {
+    color: $cards-color;
+    font-size: $links-font;
+    background: $trainer-color;
+
+    .footer-top {
+        padding: 60px 0 30px 0;
+        background: $footer-top-bg;
+
+        .footer-contact {
+            margin-bottom: 30px;
+
+            h4 {
+                font-size: $h4-font;
+                margin: 0 0 30px 0;
+                padding: 2px 0 2px 0;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 0;
+                font-family: $raleway;
+                color: $popular-color;
+            }
+
+        }
+
+        .footer-links {
+            margin-bottom: 30px;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    padding: 10px 0;
+                    display: flex;
+                    align-items: center;
+
+                    &:first-child {
+                        padding-top: 0;
+                    }
+
+                    i {
+                        padding-right: 2px;
+                        color: $main-color;
+                        font-size: 18px;
+                        line-height: 1;
+                    }
+
+                    a {
+                        color: $popular-color;
+                        transition: 0.3s;
+                        display: inline-block;
+
+                        &:hover {
+                            text-decoration: none;
+                            color: $footer-hover-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-newsletter {
+            font-size: 15px;
+
+            h4 {
+                font-size: $p-font;
+                font-weight: bold;
+                color: $mentor-color;
+                position: relative;
+                padding-bottom: 12px;
+            }
+
+            form {
+                margin-top: 30px;
+                background: white;
+                padding: 6px 10px;
+                position: relative;
+                border-radius: 50px;
+                text-align: left;
+                border: 1px solid $wht-border-color;
+
+
+                input[type=email] {
+                    border: 0;
+                    padding: 4px 8px;
+                    width: calc(100% - 100px);
+                }
+
+                input[type=submit] {
+                    position: absolute;
+                    top: -1px;
+                    right: -1px;
+                    bottom: -1px;
+                    border: 0;
+                    background: none;
+                    font-size: 16px;
+                    padding: 0 20px 2px 20px;
+                    background: $main-color;
+                    color: #fff;
+                    transition: 0.3s;
+                    border-radius: 50px;
+                    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+
+                    &:hover {
+                        background: $input-hover-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .credits {
+        padding-top: 5px;
+        font-size: 13px;
+
+        a {
+            color: $input-hover-color;
+            transition: 0.3s;
+
+            &:hover {
+                color: $main-color
+            }
+        }
+    }
+
+    .social-links {
+
+        a {
+            font-size: 18px;
+            display: inline-block;
+            background: $main-color;
+            color: #fff;
+            line-height: 1;
+            padding: 8px 0;
+            margin-right: 4px;
+            border-radius: 50%;
+            text-align: center;
+            width: 36px;
+            height: 36px;
+            transition: 0.3s;
+
+            &:hover {
+                background: $footer-hover-color;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}

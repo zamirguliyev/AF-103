@@ -1,0 +1,36 @@
+.hero-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg');
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero-container h1{
+    text-align: center;
+    font-size: 64px;
+    color: #212529;
+}
+.hero-container em{
+    text-align: center;
+    font-size: 25px;
+    color: #212529;
+}
+.hero-container button{
+    color: white;
+    width: 176px;
+    height: 66px;
+    background-color: #1D809F;
+    margin-top: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: .3s ease;
+}
+.hero-container button:hover{
+    background-color: #17667f;
+    cursor: pointer;
+}

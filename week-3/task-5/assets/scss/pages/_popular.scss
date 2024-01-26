@@ -1,0 +1,73 @@
+.popular {
+    .section-title {
+        padding-bottom: 40px;
+    }
+
+    .course-item {
+        border-radius: 5px;
+        border: 1px solid $trainer-color;
+
+        .course-content {
+            padding: 15px;
+
+            h4 {
+                font-size: 14px;
+                background: $main-color;
+                padding: 7px 14px;
+                color: white;
+                margin: 0;
+            }
+
+            .price {
+                margin: 0;
+                font-weight: 700;
+                font-size: 18px;
+                color: $cards-color
+            }
+
+            p {
+                font-size: 14px;
+                color: $popular-color;
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: $h4-font;
+
+                a {
+                    color: $cards-color;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+
+            .trainer {
+                padding-top: 15px;
+                border-top: 1px solid $trainer-color;
+
+                .trainer-profile {
+                    img {
+                        max-width: 50px;
+                        border-radius: 50px;
+                    }
+
+                    span {
+                        padding-left: 10px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: $text-color;
+                    }
+                }
+
+                .trainer-rank {
+                    font-size: 18px;
+                    color: $text-color;
+                }
+            }
+
+        }
+    }
+}

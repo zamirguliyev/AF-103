@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Young Serif';
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 2px solid red;
+    position: fixed;
+    background: white;
+}
+
+header button {
+    background: none;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+}
+
+header button:hover {
+    background: rgb(225, 233, 233);
+}
+
+header .icons-center {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .icons-center ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .icons-center ul li {
+    width: 50px;
+    height: 50px;
+    padding: 15px 18px;
+}
+
+header .icons-center ul li:hover {
+    border-radius: 50%;
+    background: rgb(225, 233, 233);
+}
+
+header .icons-right ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .icons-right ul li i {
+    width: 10px;
+    height: 10px;
+}
+
+header .icons-right ul li:nth-child(1) {
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+header .icons-right ul li:nth-child(1):hover {
+    background: rgb(225, 233, 233);
+}
+
+header .icons-right ul li:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+header .icons-right ul li:nth-child(3):hover {
+    background: rgb(225, 233, 233);
+}
+
+header .icons-right ul li button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    background: rgb(215, 191, 191);
+}
+
+main .hero {
+    width: 100%;
+    height: 100vh;
+    padding-top: 90px;
+    background: rgba(53, 53, 53, 0.1) url('https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+main .hero .nav {
+    display: flex;
+    align-items: center;
+    padding: 0 110px;
+    justify-content: space-between;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+main .hero .nav .nav-left:hover {
+    opacity: 0.5;
+}
+
+main .hero .nav .nav-right ul li:hover {
+    opacity: 0.5;
+}
+
+main .hero .nav-right ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+main .hero .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+main .hero .title article {
+    color: white;
+    text-align: center;
+}
+
+main .hero .title article h1 {
+    font-size: 5rem;
+}
+
+main .hero .title article p {
+    font-size: 1rem;
+}
+
+main .blog {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+main .blog article {
+    width: 450px;
+}
+
+main .blog article h2 {
+    font-size: 2em;
+}
+
+main .blog article h2:hover {
+    color: rgb(123, 132, 202);
+}
+
+main .blog article p {
+    font-size: 1.5rem;
+    font-weight: inherit;
+    color: rgb(38, 36, 36);
+}
+
+main .blog article p:hover {
+    color: rgb(123, 132, 202);
+}
+
+main .blog article h5 {
+    color: rgba(38, 36, 36, 0.323);
+    margin-bottom: 10px;
+}
+
+main .blog article h5 span {
+    color: rgba(38, 36, 36, 1);
+}
+
+main .blog article h5 span:hover {
+    color: rgb(123, 132, 202);
+}
+
+main .blog article hr {
+    color: rgb(51, 98, 145);
+    height: 2px;
+}
+
+main .blog button {
+    border: none;
+    background: rgb(50, 122, 199);
+    color: white;
+    width: 150px;
+    height: 50px;
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+main .blog button:hover {
+    background: rgba(35, 101, 172, 1);
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .icons ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer .icons ul li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #000;
+    padding: 14px 10px;
+}
+
+footer .icons ul li:hover {
+    background: rgb(50, 122, 199);
+}
+
+footer .icons ul li i {
+    color: white;
+}
+
+footer p {
+    color: rgb(134, 154, 155);
+}

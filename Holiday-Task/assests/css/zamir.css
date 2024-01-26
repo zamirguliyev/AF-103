@@ -1,0 +1,23 @@
+.shop-left {
+  width: 100%;
+}
+.shop-left h3 {
+  color: #212121;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 34px */
+}
+.shop-left ul li {
+  color: rgba(33, 33, 33, 0.9);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+  cursor: pointer;
+}
+.shop-right-item{
+    background: #F9F9F9;
+}

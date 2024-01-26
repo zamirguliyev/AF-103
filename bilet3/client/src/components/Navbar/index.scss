@@ -1,0 +1,22 @@
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0 80px;
+
+    .logo {
+        font-size: 32px;
+        color: orange;
+    }
+
+    .links {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}

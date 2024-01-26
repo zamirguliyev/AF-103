@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.App {
+  position: relative;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: #1d805f;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+h2 {
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-open .sidebar {
+  right: 0;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: #e6c1c18e;
+  border-radius: 8px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: #e6c1c18e;
+  border-radius: 8px;
+}
+
+.sidebar-toggle:hover,
+.scroll-to-top:hover,
+.sidebar ul li a:hover {
+  opacity: 0.8;
+}

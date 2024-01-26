@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  gap: 20px;
+}
+.container .cards {
+  background-image: url("https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=");
+  width: 400px;
+  height: 400px;
+  background-attachment: scroll;
+  padding: 10px;
+}
+.container .cards .card {
+  text-align: center;
+  padding: 20px;
+  width: 200px;
+  height: 350px;
+  background: white;
+}
+.container .cards .card p {
+  margin-top: 30px;
+}
+.container .cards .card h1 {
+  background-image: url("https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=");
+  background-position: center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  color: transparent;
+}

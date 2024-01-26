@@ -1,0 +1,20 @@
+.counts {
+    background-color: $countsBgColor;
+
+    &__container {
+        padding: 30px 0;
+
+        span {
+            color: $main-color;
+            font-size: $h1-font;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: $p-font;
+            font-family: $raleway;
+            font-weight: 700;
+        }
+    }
+
+}

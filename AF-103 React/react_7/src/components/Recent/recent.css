@@ -1,0 +1,100 @@
+.recent-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.recent-container h3 {
+  text-align: center;
+  font-size: 16px;
+  color: #ecb807;
+}
+.recent-container h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.recent-container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recent-container .cards .card {
+  flex: 1 0 60%;
+  max-width: 60%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.recent-container .cards .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1d809d; 
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+  }
+  .recent-container .cards .card:hover::before {
+    opacity: 0.6;
+  }
+
+.recent-container .cards .card .image {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 350px;
+}
+
+.recent-container .cards .card .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.recent-container .cards .card .content h3{
+    margin-top: 25%;
+}
+
+@media (min-width: 992px) {
+  .recent-container .cards .card {
+    flex: 1 0 calc(40% - 60px);
+    max-width: calc(40% - 60px);
+    background-color: transparent;
+  }
+
+  .recent-container .cards .card .content h3{
+    margin-top: 45%;
+}
+  .recent-container .cards .card:hover {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 991px) {
+  .recent-container .cards .card {
+    flex: 1 0 60%;
+    max-width: 60%;
+    height: 200px;
+    width: 80%;
+    margin: 10px 0;
+  }
+  .recent-container .cards .card:hover {
+    transform: scale(0.8);
+    background-color: #1d809d;
+  }
+}

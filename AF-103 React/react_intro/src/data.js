@@ -1,0 +1,22 @@
+export let students = [
+    {
+        id:1,
+        name:"Zamir"
+    },
+    {
+        id:2,
+        name:"Ismayil"
+    },
+    {
+        id:3,
+        name:"Eli"
+    }, 
+    {
+        id:4,
+        name:"Rufet"
+    },
+    {
+        id:5,
+        name:"Nihad"
+    },
+]

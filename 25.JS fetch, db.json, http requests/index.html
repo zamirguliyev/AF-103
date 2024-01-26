@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-light bg-body-secondary">
+        <div class="container-fluid d-flex align-items-center justify-content-between mx-5">
+            <a class="navbar-brand d-flex align-items-center justify-content-start" href="index.html">
+                <img style="height: 60px; width: 70px;" src="./assets/images/logo.png" alt=""
+                    class="d-inline-block align-text-top">
+                <h3>Zamir</h3>
+            </a>
+
+            <ul class="d-flex gap-5">
+                <li><a href="index.html" class="text-black text-decoration-none h4">Home</a></li>
+                <li><a href="book.html" class="text-black text-decoration-none h4">Books</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container my-3 ">
+        <div class="position-relative">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="https://www.cnet.com/a/img/resize/f91b315c12815936495dcd2c56150295082f998b/hub/2020/11/06/d7857572-5afe-48c3-9dfe-f91803d71768/2021-audi-rs7-008.jpg?auto=webp&fit=crop&height=675&width=1200"
+                            alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://cdn.carbuzz.com/gallery-images/1600/831000/800/831844.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="https://www.motortrend.com/uploads/2023/06/016-2024-Audi-RS6-Avant-performance-front-three-quarters.jpg"
+                            alt="">
+                    </div>
+                </div>
+
+            </div>
+            <button class="slider-button btn btn-light prevbtn" id="prev"><i
+                    class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider-button btn btn-light nextbtn" id="next"><i
+                    class="fa-solid fa-chevron-right"></i></button>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="./assets/js/slider.js"></script>
+</body>
+
+</html>

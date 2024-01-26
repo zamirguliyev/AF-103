@@ -1,0 +1,40 @@
+.cards {
+    margin-bottom: 40px;
+
+    .icon-box {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        transition: 300ms;
+        border: 1px solid $wht-border-color;
+
+        i {
+            font-size: $cards-icon-size;
+            padding-right: 10px;
+
+        }
+
+        h3 {
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+            font-size: $p-font;
+
+            a {
+                color: $cards-color;
+                transition: 0.3s;
+            }
+        }
+
+        &:hover {
+            border-color: $main-color;
+
+            h3 {
+                a {
+                    color: $main-color;
+                }
+            }
+        }
+
+    }
+}

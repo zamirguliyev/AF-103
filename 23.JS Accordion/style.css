@@ -1,0 +1,40 @@
+h2 {
+    text-align: center;
+    color: orange;
+}
+
+.accordion {
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+}
+
+.accordion-header {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+
+.accordion-header:hover {
+    background-color: #ccc;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+.arrow {
+    transition: transform 0.6s;
+}
+
+.opened {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,13 @@
+.my-btn {
+    width: 125px;
+    height: 37px;
+    background-color: $main-color;
+    color: white;
+    @extend %centerElemets;
+    border-radius: 20px;
+    margin: 0 0 0 10px;
+
+    &:hover{
+        background-color: $input-hover-color;
+    }
+}

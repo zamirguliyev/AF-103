@@ -1,0 +1,62 @@
+.other{
+    margin-top: 30px;
+
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 50px;
+        color: $main-color;
+    }
+
+    .card{
+        margin-left: 10%;
+        margin-bottom: 30px;
+        border: none;
+        width: 320px;
+
+        &__wrapper{
+            width: 315px;
+            height: 200px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        .card-about{
+            margin-top: 20px;
+            h3{
+                font-size: 24px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 14px;
+            }
+            .card-btn{
+                background: $main-color;
+                    color: white;
+                    width: 141px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    border-radius: 20px;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width:992px) {
+
+    .other{
+
+        .card{
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    }
+}

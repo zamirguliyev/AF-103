@@ -1,0 +1,175 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>User</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-body-secondary">
+        <div class="container-fluid d-flex align-items-center justify-content-between mx-5">
+            <a class="navbar-brand d-flex align-items-center justify-content-start" href="index.html">
+                <h3 class="text-primary">Zamir Shop</h3>
+            </a>
+            <ul class="d-flex gap-3 mt-3">
+                <li><a href="index.html" class="text-black text-decoration-none h4">Home</a></li>
+                <li><a href="meals.html" class="text-black text-decoration-none h4">Meals</a></li>
+                <li><a href="basket.html" class="text-black text-decoration-none h4">Basket (<span
+                            class="h6 text-danger basketCount">0</span>)</a></li>
+                <li><a href="watchlist.html" class="text-black text-decoration-none h4">Watchlist (<span
+                            class="h6 text-danger watchlistCount">0</span>)</a></li>
+                <div id="userButtons" class="d-flex gap-3 userBtn">
+                    <li><a href="login.html" id="loginButton"
+                            class="text-black text-decoration-none h4 btn btn-light">Login</a></li>
+                    <li><a href="register.html" id="registerButton"
+                            class="text-black text-decoration-none h4 btn btn-light">Register</a></li>
+                </div>
+                <div id="userInfo" class="d-none gap-3">
+                    <li><a href="user.html"><span id="usernameDisplay"
+                                class="btn btn-outline-primary text-capitalize"></span></a></li>
+                    <li><button class="btn btn-outline-danger" id="logoutButton">Logout</button></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center gap-3">
+            <div class="col-2 border p-3">
+                <button class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit
+                    Password</button>
+                <br>
+                <button class="btn btn-outline-warning mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">Add
+                    Balance</button>
+                    <br>
+                    <button class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Edit username</button>
+            </div>
+            <div class="col-3 border p-3" style="height: 200px;">
+                <h4 class="username"></h4>
+                <p>Email: <span class="email"></span></p>
+                <p>Password: <span class="password"></span></p>
+                <p>Balance: <span class="balance"></span></p>
+            </div>
+            <div class="col-6 border">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Total Price</th>
+                            <th scope="col">Order Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Change Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="changePassword">
+                        <div class="mb-1">
+                            <label for="curretPasword" class="col-form-label">Curret Password:</label>
+                            <input type="password" class="form-control" id="curretPasword">
+                            <div id="passwordHelp" class="d-none form-text text-danger h6"></div>
+                        </div>
+                        <div class="mb-1">
+                            <label for="newPassword" class="col-form-label">New Password:</label>
+                            <input type="password" class="form-control" id="newPassword">
+                            <div id="newPasswordHelp" class="d-none form-text text-danger h6"></div>
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="confirmPassword" class="col-form-label">Confirm New Password:</label>
+                            <input type="password" class="form-control" id="confirmPassword">
+                            <div id="confirmNewpasswordHelp" class="d-none form-text text-danger h6"></div>
+                        </div>
+
+                        <input type="submit" class="btn btn-primary mt-2" value="Update Password">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Change Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="changeBalance">
+
+                        <div class="mb-1">
+                            <label for="newBalance" class="col-form-label">New Balance:</label>
+                            <input type="number" min="0" class="form-control" id="newBalance">
+                            <div id="newBalancedHelp" class="d-none form-text text-danger h6"></div>
+                        </div>
+                        <input type="submit" class="btn btn-primary mt-2" value="Update Balance">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Change Username</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="changeUsername">
+
+                        <div class="mb-1">
+                            <label for="newUsername" class="col-form-label">New Username:</label>
+                            <input type="text" min="0" class="form-control" id="newUsername">
+                            <div id="newUsernamedHelp" class="d-none form-text text-danger h6"></div>
+                        </div>
+                        <input type="submit" class="btn btn-primary mt-2" value="Update Username">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
+        integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./assets/js/user.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+</body>
+
+</html>

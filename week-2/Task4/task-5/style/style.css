@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: cornflowerblue;
+}
+
+header article {
+    color: white;
+    padding: 35px;
+}
+
+main .hero {
+    margin: 20px;
+}
+
+main .hero .top-hero {
+    width: 50%;
+    margin: 0 auto;
+    background: rgb(88, 205, 88);
+    padding: 20px;
+}
+
+main .hero .top-hero article h4 {
+    text-align: end;
+}
+
+main .hero .bottom-hero {
+    width: 25%;
+    background: firebrick;
+    border-radius: 10px;
+    margin: 20 auto;
+}
+
+main .hero .bottom-hero article {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main .hero .bottom-hero article a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 20px;
+}
+
+main .description {
+    width: 100%;
+    padding: 50px 30px;
+    background: darkcyan;
+    color: white;
+}
+
+main .description h2 {
+    margin-bottom: 20px;
+}
+
+main .description p:last-child {
+    margin-top: 20px;
+}
+
+footer {
+    background: rgb(9, 8, 17);
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer ul li {
+    margin: 20px 0;
+    display: flex;
+    gap: 30px;
+    color: blue;
+}

@@ -1,0 +1,30 @@
+.about {
+    padding: 60px 0;
+
+    &__desc {
+        h3 {
+            font-size: $h3-font;
+            font-family: $raleway;
+            margin: 0 0 8px;
+        }
+
+        p {
+            font-size: $p-font;
+            margin: 0 0 16px;
+        }
+
+        ul {
+            li {
+                padding: 0 0 10px;
+                font-size: $p-font;
+
+                i {
+                    font-size: 20px;
+                    color: $main-color;
+
+                }
+            }
+        }
+
+    }
+}

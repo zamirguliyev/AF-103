@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/book.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-body-secondary">
+        <div class="container-fluid d-flex align-items-center justify-content-between mx-5">
+            <a class="navbar-brand d-flex align-items-center justify-content-start" href="index.html">
+                <img style="height: 60px; width: 70px;" src="./assets/images/logo.png" alt=""
+                    class="d-inline-block align-text-top">
+                <h3>Zamir</h3>
+            </a>
+
+            <ul class="d-flex gap-5">
+                <li><a href="index.html" class="text-black text-decoration-none h4">Home</a></li>
+                <li><a href="book.html" class="text-black text-decoration-none h4">Books</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Increase/Decrase</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <div class="col d-flex gap-5">
+            <div>Balance : <span class="balance">0</span></div>
+            <div>Total: <span class="all-total">0</span> </div>
+            <button class="btn btn-danger delete-all w-25">Order Confirmed</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/cart.js"></script>
+</body>
+
+</html>

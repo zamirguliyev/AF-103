@@ -1,0 +1,78 @@
+.models {
+    margin-top: 30px;
+    margin-left: 7%;
+
+    h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .cars {
+
+        margin: 30px 0;
+        width: 85%;
+        height: 600px;
+        background-image: url('https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/teaser_450x600/dam/US-local/Press-Releases/2021/March-2021/20210331-911-Pricing-and-Features/Shark_Blue_992_GT3_002_MA905462.jpg/jcr:content/Shark_Blue_992_GT3_002_MA905462.jpg');
+        background-size: cover;
+        border-radius: 20px;
+
+        .cars-about {
+            padding-top: 65%;
+            padding-left: 20px;
+
+            h3 {
+                color: white;
+                font-size: 24px;
+            }
+
+            p {
+                color: white;
+                font-size: 18px;
+            }
+
+            .build-btn {
+                width: 90%;
+                height: 54px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: white;
+                font-size: 20px;
+                border-radius: 10px;
+                transition: 500ms;
+
+                &:hover {
+                    background: #31363970;
+                }
+            }
+
+            .all-btn {
+                width: 90%;
+                height: 54px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                border: 2px solid gray;
+                font-size: 20px;
+                border-radius: 10px;
+                transition: 500ms;
+                margin-top: 10px;
+
+                &:hover {
+                    background: #31363996;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .models {
+        .cars {
+            .cars-about {
+                padding-top: 50% !important;
+            }
+        }
+    }
+}

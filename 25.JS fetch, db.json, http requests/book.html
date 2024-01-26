@@ -1,0 +1,188 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/book.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-light bg-body-secondary">
+        <div class="container-fluid d-flex align-items-center justify-content-between mx-5">
+            <a class="navbar-brand d-flex align-items-center justify-content-start" href="index.html">
+                <img style="height: 60px; width: 70px;" src="./assets/images/logo.png" alt=""
+                    class="d-inline-block align-text-top">
+                <h3>Zamir</h3>
+            </a>
+
+            <ul class="d-flex gap-5">
+                <li><a href="index.html" class="text-black text-decoration-none h4">Home</a></li>
+                <li><a href="book.html" class="text-black text-decoration-none h4">Books</a></li>
+                <li><a href="card.html" class="text-black text-decoration-none h4">Card</a> <span
+                        class="card-count">0</span></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- HEADER -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-center">
+                <input type="text" class="form-control w-50 search" placeholder="Search book...">
+                <button class="btn btn-success sort  mx-3">Sort by Year</button>
+                <select id="categorySelect" class="form-select w-25" aria-label="Default select example">
+                    <option selected>All</option>
+                    <option value="Fantastik">Fantastik</option>
+                    <option value="Detective">Detective</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                </select>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    class="btn btn-primary add mx-3">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADD Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create new book</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formId">
+                        <div class="mb-1">
+                            <label for="book-name" class="col-form-label">Book Name:</label>
+                            <input type="text" class="form-control" id="book-name">
+                        </div>
+                        <div class="mb-1">
+                            <label for="bookDesc" class="col-form-label">Book Description:</label>
+                            <input type="text" class="form-control" id="bookDesc">
+                        </div>
+                        <div class="mb-1">
+                            <label for="book-author" class="col-form-label">Book Author:</label>
+                            <input type="text" class="form-control" id="book-author">
+                        </div>
+                        <div class="mb-1">
+                            <label for="coverImage" class="col-form-label">Book Cover Image:</label>
+                            <input type="url" class="form-control" id="coverImage">
+                        </div>
+                        <div class="mb-1">
+                            <label for="pageCount" class="col-form-label">Book Page Count:</label>
+                            <input type="number" min="1" max="700" class="form-control" id="pageCount">
+                        </div>
+                        <div class="mb-1">
+                            <label for="price" class="col-form-label">Book Price:</label>
+                            <input type="number" class="form-control" id="price">
+                        </div>
+                        <div class="mb-1">
+                            <label for="bookYear" class="col-form-label">Book Year:</label>
+                            <input type="number" max="2023" min="0" class="form-control" id="bookYear">
+                        </div>
+                        <select id="bookCategory" class="form-select mb-1" aria-label="Default select example">
+                            <option selected>Chose book category</option>
+                            <option value="Fantastik">Fantastik</option>
+                            <option value="Detective">Detective</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Science Fiction">Science Fiction</option>
+                        </select>
+                        <input type="submit" class="btn btn-primary" value="Add">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--EDIT Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit Book</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="editForm">
+                        <div class="mb-1">
+                            <label for="edit-book-name" class="col-form-label">Book Name:</label>
+                            <input type="text" class="form-control" id="edit-book-name">
+                        </div>
+                        <div class="mb-1">
+                            <label for="edit-bookDesc" class="col-form-label">Book Description:</label>
+                            <input type="text" class="form-control" id="edit-bookDesc">
+                        </div>
+                        <div class="mb-1">
+                            <label for="edit-book-author" class="col-form-label">Book Author:</label>
+                            <input type="text" class="form-control" id="edit-book-author">
+                        </div>
+                        <div class="mb-1">
+                            <label for="edit-coverImage" class="col-form-label">Book Cover Image:</label>
+                            <input type="url" class="form-control" id="edit-coverImage">
+                        </div>
+                        <div class="mb-1">
+                            <label for="edit-pageCount" class="col-form-label">Book Page Count:</label>
+                            <input type="number" class="form-control" id="edit-pageCount">
+                        </div>
+                        <div class="mb-1">
+                            <label for="edit-price" class="col-form-label">Book Price:</label>
+                            <input type="number" class="form-control" id="edit-price">
+                        </div>
+                        <div class="mb-1">
+                            <label for="edit-bookYear" class="col-form-label">Book Year:</label>
+                            <input type="number" class="form-control" id="edit-bookYear">
+                        </div>
+
+                        <select id="edit-bookCategory" class="form-select mb-1" aria-label="Default select example">
+                            <option selected>Chose book category</option>
+                            <option value="Fantastik">Fantastik</option>
+                            <option value="Detective">Detective</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Science Fiction">Science Fiction</option>
+                        </select>
+                        <button type="submit" class="btn w-25 mt-1 btn-success">Edit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- BODY -->
+    <div class="container create-card"> </div>
+
+
+    <!-- SPINNER -->
+    <div class="spinner-wrapper d-none justify-content-center align-items-center">
+        <div class="spinner-border mt-3 " role="status"></div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/book.js"></script>
+</body>
+
+</html>

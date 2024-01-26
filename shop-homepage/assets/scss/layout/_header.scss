@@ -1,0 +1,113 @@
+header {
+    height: 56px;
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin: 20px auto;
+
+        a {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .nav {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                li {
+                    a {
+                        font-size: 16px;
+                        font-weight: normal;
+                        color: black;
+                    }
+
+                    select {
+                        border: none;
+                    }
+                }
+            }
+
+            .nav-btn {
+                width: 110px;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 10px;
+
+                i {
+                    font-size: 16px;
+                }
+
+                span {
+                    font-size: 16px;
+                }
+
+                .dot {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    color: white;
+                    background: black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .bars {
+                width: 56px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid rgb(197, 179, 179);
+                border-radius: 5px;
+
+                display: none;
+                visibility: hidden;
+
+                i {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    header {
+        .nav-item {
+
+            .nav {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+
+                ul,
+                .nav-btn {
+                    visibility: hidden;
+                    display: none;
+                }
+
+                .bars {
+                    display: flex;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}

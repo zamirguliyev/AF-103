@@ -1,0 +1,22 @@
+header {
+
+    .header__title {
+        @extend %centerElemets;
+        flex-direction: column;
+        gap: 20px;
+        margin: 50px auto;
+
+        &--main {
+            font-size: 2rem;
+            color: $title-color;
+            text-align: center;
+        }
+
+
+        &--paragraf {
+            color: $paragraft-color;
+            font-size: $paragraft-size;
+            text-align: center;
+        }
+    }
+}

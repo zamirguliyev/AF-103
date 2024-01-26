@@ -1,0 +1,75 @@
+.cards {
+    margin-top: 50px;
+
+    .card {
+        overflow: hidden;
+        width: 300px;
+        height: 177px;
+        border-radius: 20px;
+        position: relative;
+        transition: 600ms;
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+        .title {
+            position: absolute;
+            display: flex;
+            top: 75%;
+            margin-left: 15%;
+
+            p {
+                color: white;
+                font-weight: normal;
+
+            }
+
+            div {
+                width: 24px;
+                height: 24px;
+                transition: 300ms;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 30;
+
+                i {
+                    color: white;
+                    font-size: 20px;
+
+                }
+
+                &:hover {
+                    background-color: #31363977;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .cards {
+        display: flex;
+        align-items: center;
+
+        .card {
+            width: 80%;
+            height: 80%;
+            margin-left: 10%;
+
+            .title {
+                p {
+                    font-size: 24px;
+                }
+
+                i {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.why {
+    padding: 60px 0;
+
+    &__container {
+
+        &__left {
+            padding: 30px;
+            background: $main-color;
+            border-radius: 5px;
+            color: white;
+
+            h3 {
+                font-family: $raleway;
+                font-size: $why-h3;
+                margin-bottom: 30px;
+                font-weight: 700;
+            }
+
+            p {
+                margin-bottom: 30px;
+                color: white;
+                font-size: $p-font;
+            }
+
+            &__button {
+                .my-btn {
+                    width: 165px;
+                    height: 38px;
+                    display: inline-block;
+                    background: rgba(255, 255, 255, 0.33);
+                    padding: 6px 30px 8px 30px;
+                    color: white;
+                    border-radius: 50px;
+                    transition: 0.4s;
+
+                    i {
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        color: $main-color;
+                        background: white;
+                    }
+                }
+            }
+        }
+
+        .icon-boxes {
+
+            .icon-box {
+                text-align: center;
+                background: white;
+                padding: 40px 30px;
+                width: 100%;
+                border: 1px solid $wht-border-color;
+
+                i {
+                    width: 68px;
+                    height: 68px;
+                    font-size: 32px;
+                    padding: 18px;
+                    color: #5fcf80;
+                    margin-bottom: 30px;
+                    background: #ecf9f0;
+                    border-radius: 50px;
+                }
+
+                h4 {
+                    font-size: $h4-font;
+                    font-weight: 700;
+                    margin: 0 0 30px 0;
+                    font-family: $raleway;
+                }
+
+                p {
+                    font-size: $p-font;
+                    color: $text-color
+                }
+            }
+        }
+    }
+}

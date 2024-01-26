@@ -1,0 +1,104 @@
+body {
+    background: linear-gradient(180deg, blue, cyan);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 60%;
+}
+
+h1 {
+    text-align: start;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 10%;
+    padding: 10px;
+    background-color: darkorchid;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+ul span {
+    display: none;
+    visibility: hidden;
+}
+
+li {
+    width: 83.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 5px 0;
+    padding: 10px;
+    background: #ccc;
+}
+
+li button:first-child {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60px;
+    margin: 0 auto;
+}
+
+li button:last-child {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90px;
+    margin: 0 auto;
+}
+
+.footer {
+    width: 80%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer button {
+    width: 100px;
+}
+
+.empty {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 40%;
+}

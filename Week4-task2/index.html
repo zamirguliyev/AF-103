@@ -1,0 +1,341 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="menu__wrapper">
+                <div class="menu__mobile__bars1">
+                    <div class="menu__mobile__bars">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+
+                <div class="menu__mobile__icon">
+                    <img width="30px" height="30px"
+                        src="data:image/png;base64,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"
+                        alt="">
+                </div>
+
+                <div class="menu__wrapper__links">
+                    <ul>
+                        <li><a href="#">Kartlar</a></li>
+                        <li><a href="#">Kreditlər</a></li>
+                        <li><a href="#">Əmanətlər</a></li>
+                        <li><a href="#">Köçürmələr</a></li>
+                        <li><a href="#">Rəqəmsal bankçılıq</a></li>
+                        <li><a href="#">Əlavə xidmətlər</a></li>
+                    </ul>
+                </div>
+                <div class="menu__wrapper__right">
+                    <i class="fa-solid fa-phone"></i> <span>117</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cards">
+            <div class="container">
+                <h2>Kartlar</h2>
+                <div class="row items">
+                    <div class="col-xl-3 col-lg-12">
+                        <div class="card">
+                            <img src="https://unibank.az/uploads/items/o_1g04kl6mn107c1a6lc6btp4pfda.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-12">
+                        <div class="card-about">
+                            <div class="title">
+                                <h3>UCard</h3>
+                                <div class="btn title-btn">Ətraflı <span> <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                            <p>UCard - kredit və multivalyutalı debet kartını özündə birləşdirən tək kartdır.</p>
+                            <div class="card-icons">
+                                <div class="item">
+                                    <i class="fa-solid fa-copy"></i> <span>Multivalyutalı
+                                        tək kart</span>
+                                </div>
+                                <div class="item">
+                                    <i class="fa-solid fa-hourglass-half"></i> <span>40 günədək
+                                        faizsiz kredit</span>
+                                </div>
+                                <div class="item">
+                                    <i class="fa-solid fa-arrow-rotate-left"></i> <span>18 ayadək
+                                        faizsiz alış-veriş</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="debet-cards">
+            <div class="container">
+                <h2>Debet kartlar</h2>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="card">
+                            <div class="card__wrapper">
+                                <img src="https://unibank.az/uploads/items/o_1fvf8egoctbh2n41il1sbd1crdi.jpg" alt="">
+                            </div>
+                            <div class="card-about">
+                                <h3>Visa Platinum</h3>
+                                <p>Bu kartla hər zaman və hər yerdə yüksək statusunu vurğula! Böyük imkanlar vədd edən
+                                    kartı həyatının əvəzolunmaz bir hissəsinə çevir.</p>
+                                <div class="btn card-btn">Ətraflı <span> <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="card">
+                            <div class="card__wrapper">
+                                <img src="https://unibank.az/uploads/items/o_1fvf8egoctbh2n41il1sbd1crdi.jpg" alt="">
+                            </div>
+                            <div class="card-about">
+                                <h3>Visa Platinum</h3>
+                                <p>Bu kartla hər zaman və hər yerdə yüksək statusunu vurğula! Böyük imkanlar vədd edən
+                                    kartı həyatının əvəzolunmaz bir hissəsinə çevir.</p>
+                                <div class="btn card-btn">Ətraflı <span> <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="card">
+                            <div class="card__wrapper">
+                                <img src="https://unibank.az/uploads/items/o_1fvf8egoctbh2n41il1sbd1crdi.jpg" alt="">
+                            </div>
+                            <div class="card-about">
+                                <h3>Visa Platinum</h3>
+                                <p>Bu kartla hər zaman və hər yerdə yüksək statusunu vurğula! Böyük imkanlar vədd edən
+                                    kartı həyatının əvəzolunmaz bir hissəsinə çevir.</p>
+                                <div class="btn card-btn">Ətraflı <span> <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="card">
+                            <div class="card__wrapper">
+                                <img src="https://unibank.az/uploads/items/o_1fvf8egoctbh2n41il1sbd1crdi.jpg" alt="">
+                            </div>
+                            <div class="card-about">
+                                <h3>Visa Platinum</h3>
+                                <p>Bu kartla hər zaman və hər yerdə yüksək statusunu vurğula! Böyük imkanlar vədd edən
+                                    kartı həyatının əvəzolunmaz bir hissəsinə çevir.</p>
+                                <div class="btn card-btn">Ətraflı <span> <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="card">
+                            <div class="card__wrapper">
+                                <img src="https://unibank.az/uploads/items/o_1fvf8egoctbh2n41il1sbd1crdi.jpg" alt="">
+                            </div>
+                            <div class="card-about">
+                                <h3>Visa Platinum</h3>
+                                <p>Bu kartla hər zaman və hər yerdə yüksək statusunu vurğula! Böyük imkanlar vədd edən
+                                    kartı həyatının əvəzolunmaz bir hissəsinə çevir.</p>
+                                <div class="btn card-btn">Ətraflı <span> <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="card">
+                            <div class="card__wrapper">
+                                <img src="https://unibank.az/uploads/items/o_1fvf8egoctbh2n41il1sbd1crdi.jpg" alt="">
+                            </div>
+                            <div class="card-about">
+                                <h3>Visa Platinum</h3>
+                                <p>Bu kartla hər zaman və hər yerdə yüksək statusunu vurğula! Böyük imkanlar vədd edən
+                                    kartı həyatının əvəzolunmaz bir hissəsinə çevir.</p>
+                                <div class="btn card-btn">Ətraflı <span> <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="other">
+            <div class="container">
+                <h2>Digər</h2>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="card">
+                            <div class="card__wrapper">
+                                <img src="https://unibank.az/uploads/items/o_1fvf8egoctbh2n41il1sbd1crdi.jpg" alt="">
+                            </div>
+                            <div class="card-about">
+                                <h3>Visa Platinum</h3>
+                                <p>Bu kartla hər zaman və hər yerdə yüksək statusunu vurğula! Böyük imkanlar vədd edən
+                                    kartı həyatının əvəzolunmaz bir hissəsinə çevir.</p>
+                                <div class="btn card-btn">Ətraflı <span> <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="card">
+                            <div class="card__wrapper">
+                                <img src="https://unibank.az/uploads/items/o_1fvf8egoctbh2n41il1sbd1crdi.jpg" alt="">
+                            </div>
+                            <div class="card-about">
+                                <h3>Visa Platinum</h3>
+                                <p>Bu kartla hər zaman və hər yerdə yüksək statusunu vurğula! Böyük imkanlar vədd edən
+                                    kartı həyatının əvəzolunmaz bir hissəsinə çevir.</p>
+                                <div class="btn card-btn">Ətraflı <span> <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="card">
+                            <div class="card__wrapper">
+                                <img src="https://unibank.az/uploads/items/o_1fvf8egoctbh2n41il1sbd1crdi.jpg" alt="">
+                            </div>
+                            <div class="card-about">
+                                <h3>Visa Platinum</h3>
+                                <p>Bu kartla hər zaman və hər yerdə yüksək statusunu vurğula! Böyük imkanlar vədd edən
+                                    kartı həyatının əvəzolunmaz bir hissəsinə çevir.</p>
+                                <div class="btn card-btn">Ətraflı <span> <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2">
+                    <div class="footer-cart">
+                        <h4>Kartlar</h4>
+                        <p>Kartlar</p>
+                        <p>Debet Kartlar</p>
+                        <p>Diger</p>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="footer-cart">
+                        <h4>Kartlar</h4>
+                        <p>Kartlar</p>
+                        <p>Debet Kartlar</p>
+                        <p>Diger</p>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="footer-cart">
+                        <h4>Kartlar</h4>
+                        <p>Kartlar</p>
+                        <p>Debet Kartlar</p>
+                        <p>Diger</p>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="footer-cart">
+                        <h4>Kartlar</h4>
+                        <p>Kartlar</p>
+                        <p>Debet Kartlar</p>
+                        <p>Diger</p>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="footer-cart">
+                        <h4>Kartlar</h4>
+                        <p>Kartlar</p>
+                        <p>Debet Kartlar</p>
+                        <p>Diger</p>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="footer-cart">
+                        <h4>Kartlar</h4>
+                        <p>Kartlar</p>
+                        <p>Debet Kartlar</p>
+                        <p>Diger</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                    </ul>
+                    <span><a href="#">Muxtelif Siyasetler</a></span>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xl-6 col-lg-12 footer-bottom">
+                    <div class="copy">
+                        <p class="copy-1">© 2023, Unibank - Sənin Bankın</p>
+                        <p>Unibank Azərbaycan Respublikası Mərkəzi Bankının 73 saylı 14 dekabr 2010-cu il tarixli
+                            lisenziyası əsasında fəaliyyət göstərir.</p>
+                        <p>Bütün hüquqlar qorunur.</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-12">
+                    <div class="footer-images">
+                        <div class="footer-img">
+                            <img src="https://unibank.az/assets/images/adif.png" alt="">
+                        </div>
+                        <div class="footer-img">
+                            <img src="https://unibank.az/assets/images/adif.png" alt="">
+                        </div>
+                        <div class="footer-img">
+                            <img src="https://unibank.az/assets/images/adif.png" alt="">
+                        </div>
+                        <div class="footer-img">
+                            <img src="https://unibank.az/assets/images/adif.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Young Serif';
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.container .card {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.container .card .card-title {
+    position: absolute;
+    background: #fff;
+    width: 180px;
+    height: 40px;
+    margin-top: 40%;
+    text-align: center;
+}
+
+.container .card img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .description {
+    margin-top: 10px;
+}
+
+.container .description h5 {
+    opacity: 0.4;
+}
+
+.container .description h3 {
+    margin: 10px 0;
+}

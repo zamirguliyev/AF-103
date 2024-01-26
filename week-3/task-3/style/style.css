@@ -1,0 +1,292 @@
+body {
+    background-color: #e0e4e9;
+}
+
+.container .header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.container .header-title h2 {
+    font-size: 2rem;
+}
+
+.container .header-title p {
+    color: #a38889;
+    font-size: 14px;
+}
+
+@media only screen and (max-width:992px) {
+    .container .header-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .container .header-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
+
+/* Card */
+
+#cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 150px;
+}
+
+#cards .card .card-img {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+
+#cards .card .card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px 6px 0 0;
+    z-index: 2;
+}
+
+@keyframes buttonAnimate {
+    from {
+        margin-top: -50%;
+    }
+
+    to {
+        margin-top: 20%;
+    }
+}
+
+#cards .card .card-img .card-btn {
+    position: absolute;
+    z-index: 999;
+    margin-top: 35%;
+    margin-left: 30%;
+}
+
+#cards .card .card-img .card-btn button {
+    width: 100px;
+    height: 50px;
+    background: #ed4a28;
+    border-radius: 5px;
+    color: white;
+    display: none;
+    transition: 1s;
+}
+
+
+#cards .card:hover .card-img .card-btn button {
+    display: block;
+    animation: buttonAnimate;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+
+#cards .card .card-desc {
+    background-color: white;
+    padding: 20px;
+}
+
+#cards .card .card-desc h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#cards .card .card-desc p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#cards .card .card-desc .card-end {
+    border-top: 1px solid #877a7a;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cards .card .card-desc .card-end .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#cards .card .card-desc .card-end .rating .icons i {
+    color: rgb(255, 196, 0);
+}
+
+#cards .card .card-desc .card-end .price p:first-child {
+    color: #ff7a58;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cards .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#cards .btn .cards-btn {
+    width: 218px;
+    height: 50px;
+    color: white;
+    background-color: #ed4a28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 50px 0;
+    border-radius: 5px;
+    transition: 600ms;
+}
+
+#cards .btn .cards-btn:hover {
+    transform: scale(0.9);
+    background: #821b07;
+}
+
+@media only screen and (max-width:576px) {
+    #cards .btn .cards-btn {
+        width: 218px;
+        height: 50px;
+        color: white;
+        background-color: #ed4a28;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        margin: 50px 0;
+        border-radius: 5px;
+    }
+}
+
+/* Services */
+#service {
+    margin-bottom: 50px;
+}
+
+#service .service-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#service .service-title h2 {
+    font-size: 2rem;
+    color: #292b2c;
+}
+
+#service .service-title p {
+    font-size: 14px;
+    color: #898889;
+}
+
+#service .service-card {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#service .service-card .service-box {
+    border: 2px solid #fd5d3c;
+    border-radius: 50%;
+    width: 79px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1000ms;
+    position: relative;
+}
+
+#service .service-card .service-box::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform-origin: center;
+    transform: scale(0);
+    transition: 1s;
+}
+
+#service .service-card .service-box:hover::before {
+    transform: scale(0.9);
+    background-color: #ed4a28;
+}
+
+#service .service-card .service-box:hover i {
+    color: white;
+    transition: 1s;
+}
+
+
+#service .service-card .service-box i {
+    color: #ed4a28;
+}
+
+#service .service-card h3 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+#service .service-card p {
+    color: #968989;
+    font-size: 16px;
+}
+
+@media only screen and (max-width:768px) {
+    #service .service-card p {
+        display: none;
+    }
+
+    #service .service-card h3 {
+        font-weight: bold;
+    }
+
+    #service .service-card {
+        margin-top: 30px;
+    }
+}

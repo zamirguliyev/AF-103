@@ -1,0 +1,96 @@
+#service {
+    margin-bottom: 50px;
+
+    .service__title {
+        @extend %centerElemets;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        text-align: center;
+
+        &--header {
+            font-size: 2rem;
+            color: $title-color;
+        }
+
+        &--paragraf {
+            font-size: $paragraft-size;
+            color: $paragraft-color;
+        }
+    }
+
+    .service__card {
+        @extend %centerElemets;
+        gap: 10px;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 300px;
+
+        &__box {
+            border: 2px solid $service-border-color;
+            border-radius: 50%;
+            width: 79px;
+            height: 79px;
+            @extend %centerElemets;
+            transition: .5s;
+            position: relative;
+
+            &--icon {
+                color: $button-bg-color;
+            }
+
+            &::before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                z-index: -1;
+                transform-origin: center;
+                transform: scale(0);
+                transition: .5s;
+            }
+
+            &:hover::before {
+                transform: scale(0.9);
+                background-color: $button-bg-color
+            }
+
+            &:hover i {
+                color: $icons-hover-color;
+                transition: 1s;
+            }
+        }
+
+        &--title {
+            font-size: $service-card-title-font-size;
+            font-weight: $service-card-title-font-weight;
+        }
+
+        &--paragraf {
+            color: $paragraft-color;
+            font-size: $paragraft-size;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #service {
+        .service__card {
+            margin-top: 30px;
+
+            &--paragraf{
+                display: none;
+            }
+
+            &--title {
+                font-weight: bold;
+            }
+
+        }
+    }
+}

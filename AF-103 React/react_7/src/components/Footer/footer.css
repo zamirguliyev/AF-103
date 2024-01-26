@@ -1,0 +1,33 @@
+.footer-container{
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer-container .icons{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.footer-container .icons .icon{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #1D809F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease;
+}
+.footer-container .icons .icon:hover{
+    background: #6c757d;
+    cursor: pointer;
+}
+
+.footer-container p{
+    text-align: center;
+    font-size: 14px;
+    color: #6C757D;
+}

@@ -1,0 +1,39 @@
+yaradacgin komponentin witdh deyeri 40% hundurluk ise 100vh merkezde olamalidir,
+ilk form select olmalidir ve selectin optionlari ise https://northwind.vercel.app/api/categories bu apiye istek atib her name deyerleri olacaq 
+asagi hissesinde  2 input olacaq name ve unit Price yan yana olmalidir ve unit pirce inputu number olmalidir,
+asagi hissesinde yene yan yana 2 input olamalidir unit in Stock number olamalidir ve checkbox inputu  Is Discounted,
+asagisinda ise Quantity per Unite inputu olmalidir, en assagi hissesinde ise add product to api buttonu olacaq bu buttona click olan zaman 
+https://northwind.vercel.app/api/products bu apiye istek atmalidir ve api sekili {
+    "id": 4,
+    "supplierId": 2,
+    "categoryId": 3,
+    "quantityPerUnit": "48 - 6 oz jars",
+    "unitPrice": 22,
+    "unitsInStock": 53,
+    "unitsOnOrder": 0,
+    "reorderLevel": 0,
+    "discontinued": true,
+    "name": "Chef Anton's Cajun Seasoning",
+    "supplier": {
+      "id": 2,
+      "companyName": "New Orleans Cajun Delights",
+      "contactName": "Shelley Burke",
+      "contactTitle": "Order Administrator",
+      "address": {
+        "street": "P.O. Box 78934",
+        "city": "New Orleans",
+        "region": "LA",
+        "postalCode": 70117,
+        "country": "USA",
+        "phone": "(100) 555-4822"
+      }
+    },
+    "category": {
+      "id": 3,
+      "description": "Desserts candies and sweet breads",
+      "name": "Confections"
+    }
+  }  
+  bu sekildedir categoryId hissesine cekdiyimiz datanin id deyeri yazilmalidir, name deyeri ele name deyeri olacaq
+unitPrice de ele unitsInStock da ele discontinued deyeri checkbox un deyeri olmalidir,quantityPerUnit deyeride ele olmalidir 
+formik ile yaz ve validationlarida yup ile ve inputlardan hansisa bos olsa click olunmasin

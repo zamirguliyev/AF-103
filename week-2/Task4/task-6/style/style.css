@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 50px auto;
+    width: 350px;
+    height: 200px;
+    border: 2px solid black;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.container article h2 {
+    background: rgb(81, 77, 75);
+    position: sticky;
+    top: 0;
+}

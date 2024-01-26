@@ -1,0 +1,204 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+        integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assests/css/headerFooter.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/basket.css">
+    <title>Snobella</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container head-container">
+            <div class="left">
+                <img src="assests/images/Vector.svg" alt="">
+                <p>+748 383 23 14</p>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Terms of Use</li>
+                    <li class="faq">FAQ</li>
+                    <li>Customer service</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container nav-container">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand title" href="index.html">Snobella</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex align-items-center border rounded mx-auto" role="search"
+                        style="max-width: 504px;">
+                        <input class="form-control border-0" type="search" style="max-width: 450px"
+                            placeholder="Search all product" aria-label="Search" />
+                        <button type="submit" class="btn"><img src="./assests/images/search 1.png" alt=""></button>
+                    </form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="basket.html">
+                                <img src="./assests/images/bag.svg" alt="">
+                                Basket
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="singup.html">
+                                <img src="./assests/images/avatar 1.svg" alt="">
+                                Sign up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="wishlist.html">
+                                <img src="./assests/images/heart (2).svg" alt="">
+                                Wishlist
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="bottom mb-4 align-items-center justify-content-center">
+            <ul class="row list-unstyled">
+                <li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#">Evening bags</a></li>
+                <li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#">Shoulder bag</a></li>
+                <li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#">Backpack</a></li>
+                <li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#">Handbag</a></li>
+                <li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#">Postman bag</a></li>
+                <li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#">Belt bags</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="container my-5">
+        <div class="row">
+          <div class="col-md-8" id="cartItemsContainer">
+          </div>
+          <div class="col-md-4 my-3" id="cartItemsTotal">
+            <button class="btn btn-danger my-3 w-100 text-light">Confirm card</button>
+            <button class="btn w-100 border">Cash payment</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <footer style="background: rgba(247, 247, 249, 1);" class="py-4">
+        <div class="container">
+            <div class="row align-items-center justify-content-between footer-top">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <a class="navbar-brand footer-title" href="index.html">Snobella</a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <form class="d-flex align-items-center border rounded" role="search" style="max-width: 504px;">
+                        <input class="form-control border-0" type="search" style="max-width: 450px"
+                            placeholder="Search all products" aria-label="Search" />
+                        <button type="submit" class="btn"><img src="./assests/images/search 1.png" alt=""></button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row align-items-center justify-content-between footer-mid">
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-3">
+                    <p style="max-width: 300px">The wise man therefore always holds selection. The wise man therefore
+                        always rejects pleasures to secure other greater.</p>
+                    <p>
+                        <img src="./assests/images/email (3) 1.svg" alt="">
+                        Snobella@gmail.com
+                    </p>
+                    <p>
+                        <img src="./assests/images/phone-call (3) 1.svg" alt="">
+                        +748 383 23 14
+                    </p>
+                    <button class="btn btn-outline-dark">
+                        <img src="./assests/images/send 1.svg" alt="">
+                        Send message</button>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 row">
+                    <ul class="col-lg-4 col-md-4 col-sm-12">
+                        <li>Shop</li>
+                        <li><a href="#">Shoulder Bag</a></li>
+                        <li><a href="#">Backpack</a></li>
+                        <li><a href="#">Tote Bag</a></li>
+                        <li><a href="#">Hand Bag</a></li>
+                        <li><a href="#">Evening bags</a></li>
+                        <li><a href="#">Purse</a></li>
+                    </ul>
+                    <ul class="col-lg-4 col-md-4 col-sm-12">
+                        <li>Company</li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Customer service</a></li>
+                    </ul>
+                    <ul class="col-lg-4 col-md-4 col-sm-12">
+                        <li>Help</li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Cancellation of the order</a></li>
+                        <li><a href="#">Don't go back</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-between py-1 footer-bottom">
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-0">
+                    <p class="mb-0">© 2020. All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <ul class="d-flex gap-2 mb-0 justify-content-end">
+                        <li>
+                            <a href="#"><img src="./assests/images/instagram (1).svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assests/images/facebook (6).svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assests/images/whatsapp.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
+        integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.3/swiper-bundle.min.js"
+        integrity="sha512-ILrDRgEiIojcsKyBy12ZU7MtOf78F2fj3vve/AN5i94iXLQ8PZN7IJYPphmAGdwZmTv4N+OzY3trvqGIEY87VA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./assests/js/basket.js"></script>
+</body>
+
+</html>

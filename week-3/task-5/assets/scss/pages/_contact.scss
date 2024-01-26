@@ -1,0 +1,83 @@
+.contact {
+
+    .info {
+        width: 100%;
+        background: white;
+
+        i {
+            font-size: $h4-font;
+            color: $main-color;
+            float: left;
+            width: 44px;
+            height: 44px;
+            background: #ecf9f0;
+            @extend %centerElemets;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: $main-color;
+                color: white;
+            }
+        }
+
+        h4 {
+            padding: 0 0 0 60px;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: $cards-color;
+        }
+
+        P {
+            padding: 0 0 0 60px;
+            margin-bottom: 0;
+            font-size: 14px;
+            color: $text-color;
+        }
+    }
+
+    form {
+        width: 100%;
+        background: #fff;
+
+        .form-group {
+            padding-bottom: 8px;
+
+            input {
+                border-radius: 4px;
+                box-shadow: none;
+                font-size: 14px;
+                height: 44px;
+
+                &:focus {
+                    border-color: $main-color;
+                }
+            }
+
+            textarea {
+                border-radius: 4px;
+                box-shadow: none;
+                font-size: 14px;
+                padding: 10px 12px;
+
+                &:focus {
+                    border-color: $main-color;
+                }
+            }
+        }
+
+        button {
+            background: $main-color;
+            border: 0;
+            padding: 10px 35px;
+            color: #fff;
+            transition: 0.4s;
+            border-radius: 50px;
+
+            &:hover {
+                background: $input-hover-color;
+            }
+        }
+    }
+}

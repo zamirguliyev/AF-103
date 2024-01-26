@@ -1,0 +1,70 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Beyaz Diş",
+      "pageCount": 352,
+      "coverImage": "https://i.dr.com.tr/cache/500x400-0/originals/0001788066001-1.jpg",
+      "author": "Jack London",
+      "year": 1906,
+      "description": "Vahşi doğanın içinde bir kurtun hikayesi.",
+      "genre": "Drama",
+      "price": 14
+    },
+    {
+      "id": 4,
+      "name": "Suç ve Ceza",
+      "pageCount": 671,
+      "coverImage": "https://img.kitapyurdu.com/v1/getImage/fn:11318194/wh:true/wi:800",
+      "author": "Fyodor Dostoevsky",
+      "year": 1866,
+      "description": "Bir suçlu gencin içsel çatışmalarını ele alan bir roman.",
+      "genre": "Fantastik",
+      "price": 16
+    },
+    {
+      "id": 5,
+      "name": "Harry Potter ve Felsefe Taşı",
+      "pageCount": 332,
+      "coverImage": "https://novella.az/wp-content/uploads/2021/02/Harry-Potter-ve-Felsefe-Tasi-Harry-Potter-1.jpg",
+      "author": "J.K. Rowling",
+      "year": 1997,
+      "description": "Bir genç büyücünün maceralarına başladığı kitap.",
+      "genre": "Detective",
+      "price": 18
+    },
+    {
+      "id": 6,
+      "name": "Simyacı",
+      "pageCount": 163,
+      "coverImage": "https://static.insales-cdn.com/images/products/1/2151/194021479/0000000064552-1.jpg",
+      "author": "Paulo Coelho",
+      "year": 1988,
+      "description": "Bir çobanın kişisel yolculuğunun hikayesi.",
+      "genre": "Drama",
+      "price": 22
+    },
+    {
+      "name": "Zamir",
+      "pageCount": "150",
+      "coverImage": "https://vimaj.com/images/html-nedir.jpg",
+      "author": "Zamir",
+      "year": "2022",
+      "description": "HTML",
+      "genre": "Thriller",
+      "price": "150",
+      "id": 7
+    },
+    {
+      "name": "Zamir",
+      "pageCount": "15",
+      "coverImage": "https://cdn.carbuzz.com/gallery-images/1600/831000/800/831844.jpg",
+      "author": "Zamir",
+      "year": "2023",
+      "description": "the",
+      "genre": "Detective",
+      "price": "200",
+      "id": 8
+    }
+  ]
+}

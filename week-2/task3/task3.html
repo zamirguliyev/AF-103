@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Event Registration Form</h1>
+    <form action="" id="form">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="Fullname" required maxlength="20" placeholder="Full Name" />
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Email" />
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="Fullname" required placeholder="Phone" />
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Event Details</legend>
+            <div>
+                <label for="eventname">Event Name:</label>
+                <input type="text" id="eventname" name="Eventname" required placeholder="Event Name" />
+            </div>
+            <div>
+                <label for="date">Event Date:</label>
+                <input type="date" id="date" name="date" required placeholder="Event Date" />
+            </div>
+            <div>
+                <label for="location">Event Location:</label>
+                <input type="text" id="location" name="Location" required placeholder="Event Location" />
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ticket Selection</legend>
+            <div>
+                <label for="choose">Chosse Ticket Type:</label><br>
+                <div>
+                    <input type="radio" name="standart" id="standart">
+                    <label for="standart"> Standart</label><br>
+                    <input checked type="radio" name="vip" id="vip">
+                    <label for="vip"> VIP</label><br>
+                </div>
+            </div>
+            <div>
+                <label for="number">Quantity:</label>
+                <input type="quantity" id="quantity" name="quantity" required placeholder="Quantity" />
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Dietary Prefences</legend>
+            <div>
+                <label for="">Do you have any dietary Prefences</label><br>
+                <input type="checkbox" name="vegeterian" id="vehicle1">
+                <label for="vehicle1"> Vegeterian</label><br>
+                <input type="checkbox" name="vegan" id="vehicle2">
+                <label for="vehicle2"> Vegan</label><br>
+                <input type="checkbox" name="glutetenfree" id="vehicle3">
+                <label for="vehicle3"> Glutten Free</label>
+            </div>
+        </fieldset>
+        <div>
+            <label for="textare">Additional Comments:</label><br>
+            <textarea name="textare" id="textare" cols="40" rows="5" placeholder="Send Message"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="check" id="check">
+            <label for="check">I agree ti the terms and conditions</label>
+        </div>
+        <button id="form" type="submit">Register</button>
+        <button id="form" type="reset">Cancel</button>
+    </form>
+</body>
+
+</html>

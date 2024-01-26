@@ -1,0 +1,12 @@
+@mixin button-mixing() {
+    @extend %centerElemets;
+    background-color: $button-bg-color;
+    color: $button-color;
+    border-radius: 10px;
+    transition: 1s;
+
+    &:hover {
+        transform: scale(0.9);
+        background-color: $button-hover-color;
+    }
+}

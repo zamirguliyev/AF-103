@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset style="width: 350px">
+        <legend>Zamir Task</legend>
+        <div>
+          <label for="name">Name:</label>
+          <input
+            required
+            maxlength="5"
+            type="text"
+            id="name"
+            placeholder="Name"
+          />
+        </div>
+        <div>
+          <label for="number">Fav Number:</label>
+          <input
+            required
+            max="30"
+            min="6"
+            type="number"
+            id="number"
+            placeholder="Number"
+          />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input required type="email" id="email" placeholder="Email" />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input
+            required
+            type="password"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+
+        <div>
+          <label for="password">Gender:</label>
+          <input
+            required
+            checked
+            type="radio"
+            id="html"
+            name="fav_language"
+            value="HTML"
+          />
+            <label checked for="html">Male</label>  
+          <input type="radio" id="css" name="fav_language" value="CSS" />  
+          <label for="css">Famale</label>
+        </div>
+
+        <div>
+          <label for="cars">Country:</label>
+          <select name="cars" id="cars">
+            <option value="volvo">USA</option>
+            <option value="saab">AZ</option>
+            <option value="opel">TR</option>
+            <option value="audi">Geymany</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="textare">Message:</label>
+          <br />
+          <textarea
+            required
+            placeholder="Send Mesage"
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="vehicle1"> Subcribe</label>
+          <input
+            required
+            type="checkbox"
+            id="vehicle1"
+            name="vehicle1"
+            value="Bike"
+          />
+        </div>
+
+        <div>
+          <label for="file">Upload image</label>
+          <input
+            accept="image/png, image/jpeg"
+            multiple
+            required
+            type="file"
+            name=""
+            id="file"
+          />
+        </div>
+
+        <div>
+          <label for="birth">Birthday</label>
+          <input required type="date" name="" id="" />
+        </div>
+        <div>
+          <label for="color">Favorite Color</label>
+          <input required type="color" name="" id="" />
+        </div>
+
+        <div>
+          <label for="link">Personal Website:</label>
+          <input required type="url" name="" id="" placeholder="Website link" />
+        </div>
+
+        <div>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
