@@ -1,0 +1,43 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  .hamburger {
+    display: none;
+    visibility: hidden;
+  }
+
+  .links {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    Link {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-container {
+    .links {
+      display: none;
+      visibility: hidden;
+    }
+    .hamburger {
+      display: block;
+      visibility: visible;
+    }
+  }
+}
